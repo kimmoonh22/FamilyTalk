@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:layout_height="fill_parent"
+    android:layout_width="fill_parent" android:background="@android:color/transparent"
+    android:id="@+id/lay_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:background="#ffffff"
+        android:layout_centerInParent="true">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/txt_dialog_title"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:text="title"
+        android:gravity="center"
+        android:layout_margin="15dp"/>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt_dialog_title">
+
+    <Button
+        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:id="@+id/btn_1"
+        android:textColor="#ffffff"
+        android:text="ON"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_dialog_title"
+        android:scaleType="fitCenter"/>
+
+    <Button
+        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:id="@+id/btn_2"
+        android:textColor="#ffffff"
+        android:text="OFF"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_dialog_title"
+        android:scaleType="fitCenter"/>
+</TableRow>
+
+</RelativeLayout>
+
+</RelativeLayout>

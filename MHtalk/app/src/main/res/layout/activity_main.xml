@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E2E2E2"
+    android:gravity="center"
+    tools:context="com.example.a0104.mhtalk.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="본인의 캐릭터를 선택해주세요."
+        android:textColor="#00415f"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/kjb_selector"
+                android:id="@+id/father" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="김종복"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#00415f"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/kmh_selector"
+                android:id="@+id/daughter"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="김문희"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:textColor="#00415f"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/kkt_selector"
+                android:id="@+id/son" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="김규태"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#00415f"/>
+        </LinearLayout>
+    </TableRow>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e2e2e2"
+    tools:context="com.example.a0104.mhtalk.MapGPS.MapActivity">
+
+    <FrameLayout
+        android:id="@+id/maplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"></FrameLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/kjb_selector"
+                android:id="@+id/father_map" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/kmh_selector"
+                android:id="@+id/daughter_map"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/kkt_selector"
+                android:id="@+id/son_map" />
+        </LinearLayout>
+    </TableRow>
+
+</LinearLayout>
