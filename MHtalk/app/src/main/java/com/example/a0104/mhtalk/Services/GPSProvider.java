@@ -55,7 +55,7 @@ public class GPSProvider extends Service {
         Log.d("test", "서비스의 onStartCommand");
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         try {
-            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5 * 60 * 1000, 0, locationListener);
+            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 30 * 60 * 1000, 0, locationListener);
             Log.d("test", "onStartCommand : requestLocationUpdates");
         }
         catch (SecurityException e) {
@@ -73,7 +73,7 @@ public class GPSProvider extends Service {
             String time = sdfNow.format(new Date(System.currentTimeMillis()));
             latitude = location.getLatitude();
             longitude = location.getLongitude();
-            Log.d("test", "onLocationChanged");
+            Log.d("test", "onLocationChanged : lat "+latitude+" lon "+longitude);
             String query = "insert into GPS_INFO(id, lat, lon, timeinfo) values ('"+id+"','"+latitude+"','"+longitude+"','"+time+"')";
             new HttpUtil().execute(query);
         }

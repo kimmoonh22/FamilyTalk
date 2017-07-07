@@ -1,10 +1,10 @@
 package com.example.a0104.mhtalk.MapGPS;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -29,7 +29,7 @@ import static com.example.a0104.mhtalk.R.drawable.kjb_marker;
 import static com.example.a0104.mhtalk.R.drawable.kkt_marker;
 import static com.example.a0104.mhtalk.R.drawable.kmh_marker;
 
-public class MapActivity extends Activity {
+public class MapActivity extends AppCompatActivity {
 
     private String APPKEY = "2cfca2bc-7f91-3031-b69d-3c7eed12970c";
     FrameLayout mapLayout;

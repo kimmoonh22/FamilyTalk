@@ -1,10 +1,10 @@
 package com.example.a0104.mhtalk;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
 
 import com.example.a0104.mhtalk.AppGuide.GuideActivity;
 import com.example.a0104.mhtalk.DB.DBHelper;
@@ -14,7 +14,7 @@ import com.tsengvn.typekit.TypekitContextWrapper;
  * Created by a0104 on 2017-07-03.
  */
 
-public class IntroActivity extends Activity {
+public class IntroActivity extends AppCompatActivity {
     Intent in;
 
     @Override

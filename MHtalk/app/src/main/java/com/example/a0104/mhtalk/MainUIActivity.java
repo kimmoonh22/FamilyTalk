@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.a0104.mhtalk.Calander.CalendarActivity;
 import com.example.a0104.mhtalk.DB.DBHelper;
 import com.example.a0104.mhtalk.Dialogs.CustomDialog;
 import com.example.a0104.mhtalk.MapGPS.MapActivity;
@@ -40,23 +41,27 @@ public class MainUIActivity extends AppCompatActivity implements View.OnClickLis
         myname.setText(name);
         myicon.setImageResource(icon);
 
-        try {
-            Intent in = new Intent(MainUIActivity.this, GPSProvider.class);
-            startService(in);
-        }
-        catch(Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Intent in = new Intent(MainUIActivity.this, GPSProvider.class);
+//            startService(in);
+//        }
+//        catch(Exception e) {
+//            e.printStackTrace();
+//        }
     }
 
     @Override
     public void onClick(View v) {
+        Intent intent;
+
         switch (v.getId()) {
             case R.id.map_btn:
-                Intent intent = new Intent(this, MapActivity.class);
+                intent = new Intent(this, MapActivity.class);
                 startActivity(intent);
                 break;
             case R.id.cal_btn:
+                intent = new Intent(this, CalendarActivity.class);
+                startActivity(intent);
                 break;
             case R.id.msg_btn:
                 break;

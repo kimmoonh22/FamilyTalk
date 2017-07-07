@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.a0104.mhtalk">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:name=".CustomFont"
         android:allowBackup="true"
@@ -31,11 +35,9 @@
         <service
             android:name=".Services.GPSProvider"
             android:enabled="true"
-            android:exported="true"></service>
-    </application>
+            android:exported="true" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <activity android:name=".Calander.CalendarActivity"></activity>
+    </application>
 
 </manifest>

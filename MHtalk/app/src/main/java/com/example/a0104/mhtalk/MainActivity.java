@@ -1,16 +1,16 @@
 package com.example.a0104.mhtalk;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.a0104.mhtalk.DB.DBHelper;
 import com.tsengvn.typekit.TypekitContextWrapper;
 
-public class MainActivity extends Activity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     DBHelper dbHelper;
     Button kjb, kmh, kkt;
